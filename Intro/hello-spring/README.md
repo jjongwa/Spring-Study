@@ -23,6 +23,7 @@
   - JUnit을 통한 테스트 코드 작성 시 하나의 파일에서 함수들의 호출 순서는 보장되지 않는다.
     - 따라서 각 테스트들을 의존적으로 만들어션 안된다.
     - 또는 **@AfterEach** 를 통해 각 테스트 진행 시 clear 해주는 함수를 생성한다.
+  - [IntelliJ] Extract Method 단축키 (windows) : *Ctrl + Alt + m*
 
 
 
