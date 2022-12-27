@@ -17,8 +17,13 @@
     ![img_1.png](img_1.png)
 
 ### 회원 관리 예제 - 백엔드 개발
-  - [IntelliJ] Generate 단축키 (windows) : Alt + Insert
-  - Optional: 함수에서 Null을 그대로 반환하는것을 방지하기 위한 'Wrapper' 클래스. 자바 8에서 추가됨. 
+  - [IntelliJ] Generate 단축키 (windows) : *Alt + Insert*
+  - Optional: 함수에서 Null을 그대로 반환하는것을 방지하기 위한 'Wrapper' 클래스. 자바 8에서 추가됨.
+  - [IntelliJ] Rename 단축키 (windows) : *Shift + F6*
+  - JUnit을 통한 테스트 코드 작성 시 하나의 파일에서 함수들의 호출 순서는 보장되지 않는다.
+    - 따라서 각 테스트들을 의존적으로 만들어션 안된다.
+    - 또는 **@AfterEach** 를 통해 각 테스트 진행 시 clear 해주는 함수를 생성한다.
+
 
 
 ### Error 목록
