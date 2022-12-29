@@ -24,6 +24,9 @@
     - 따라서 각 테스트들을 의존적으로 만들어션 안된다.
     - 또는 **@AfterEach** 를 통해 각 테스트 진행 시 clear 해주는 함수를 생성한다.
   - [IntelliJ] Extract Method 단축키 (windows) : *Ctrl + Alt + m*
+  - [IntelliJ] Test Method 단축키 (windows) : *Ctrl + Shift + t*
+  - @BeforeEach: 각 테스트 실행 전에 호출된다. 테스트가 서로 영향이 없도록 항상 새로운 객체를 생성하고,
+    의존관계도 새로 맺어준다.
 
 
 
