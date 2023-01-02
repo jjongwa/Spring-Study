@@ -43,6 +43,11 @@
     - @Repository
     
 ####2. 자바 코드로 직접 스프링 빈 등록하기
+  - SpringConfig 파일을 생성해 직접 MemberService와 MemberRepository Bean을 생성한다.
+
+1번과 2번 어떤 방법을 쓰든 결과는 다음과 같다.
+![img_2.png](img_2.png)
+
 
 
 ### Error 목록
