@@ -30,6 +30,7 @@
 
 ### 스프링 빈과 의존관계
 스프링 빈을 등록하는 2가지 방법
+
 ####1. 컴포넌트 스캔과 자동 의존관계 설정
   - @Controller가 있으면 스프링 컨테이너에 해당 객체를 생성해 넣어놓고 관리하게 된다.
   - @Autowired가 있으면 컨테이너에 있는 객체와 매개변수를 연결시켜준다.
@@ -42,13 +43,18 @@
     - @Service
     - @Repository
     
+
 ####2. 자바 코드로 직접 스프링 빈 등록하기
   - SpringConfig 파일을 생성해 직접 MemberService와 MemberRepository Bean을 생성한다.
 
 1번과 2번 어떤 방법을 쓰든 결과는 다음과 같다.
 ![img_2.png](img_2.png)
 
-
+### 스프링 DB 접근 기술
+  - 개방-폐쇄 원칙(OCP, Open-Closed Principle)
+    - 확장에는 열려있고, 수정, 변경에는 닫혀있다.
+  - 스프링의 DI (Dependencies Injection)을 사용하면 기존 코드를 전혀 손대지 않고, 설정만으로 구현  클래스를 변경할 수 있다
+    ![img_3.png](img_3.png)
 
 ### Error 목록
 - [ WARN 4872 --- [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location:](https://www.inflearn.com/questions/264496/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-%EB%B9%8C%EB%93%9C-%EC%A4%91-%EC%98%A4%EB%A5%98-%EC%A7%88%EB%AC%B8%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4-%E3%85%A0%E3%85%A0)
