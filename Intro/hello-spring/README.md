@@ -59,8 +59,19 @@
   - @Transactional: 테스트 케이스에 이 애노테이션이 있으면, 테스트 시작 전에 트랜잭션을 시작하고,
     테스트 완료 후에 항상 롤백한다. 이렇게 하면 DB에 데이터가 남지 않으므로 다음 테스트에 영향을 주지
     않는다.
-
   
+### AOP
+  - 메소드의 호출 시간 측정을 위해 각 메소드에 코드를 추가하였을 때의 문제점
+    - 회원가입, 회원 조회에 시간을 측정하는 기능은 핵심 관심 사항이 아니다.
+    - 시간을 측정하는 로직은 공통 관심 사항이다.
+    - 시간을 측정하는 로직과 핵심 비즈니스의 로직이 섞여서 유지보수가 어렵다.
+    - 시간을 측정하는 로직을 별도의 공통 로직으로 만들기 매우 어렵다.
+    - 시간을 측정하는 로직을 변경할 때 모든 로직을 찾아가면서 변경해야 한다.
+  - 이러한 문제점을 해결하기 위해 -> **AOP**
+    - 공통 관심 사항(cross-cutting concern) vs 핵심 관심 사항(core concern) 분리
+    ![img_4.png](img_4.png)
+    ![img_5.png](img_5.png)
 
 ### Error 목록
 - [ WARN 4872 --- [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location:](https://www.inflearn.com/questions/264496/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-%EB%B9%8C%EB%93%9C-%EC%A4%91-%EC%98%A4%EB%A5%98-%EC%A7%88%EB%AC%B8%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4-%E3%85%A0%E3%85%A0)
+- H2 접속(Window) - H2/bin에서 **./h2.bat**
