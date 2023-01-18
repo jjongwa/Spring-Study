@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a530845d-1a5e-4e87-b866-20f5f8e9d039" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/hello/core/CoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/hello/core/CoreApplication.java" afterDir="false" />
+    <list default="true" id="a530845d-1a5e-4e87-b866-20f5f8e9d039" name="변경" comment="전체 흐름 정리 - IoC, DI, 그리고 컨테이너">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,11 +42,36 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673615464722</updated>
-      <workItem from="1673615467258" duration="688000" />
+      <workItem from="1673615467258" duration="1381000" />
+      <workItem from="1673773041541" duration="1285000" />
+      <workItem from="1673962701886" duration="2174000" />
     </task>
+    <task id="LOCAL-00001" summary="전체 흐름 정리 - IoC, DI, 그리고 컨테이너">
+      <created>1673964286687</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673964286687</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="전체 흐름 정리 - IoC, DI, 그리고 컨테이너" />
+    <option name="LAST_COMMIT_MESSAGE" value="전체 흐름 정리 - IoC, DI, 그리고 컨테이너" />
   </component>
 </project>
