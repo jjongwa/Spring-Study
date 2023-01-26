@@ -18,7 +18,7 @@ public class ConfigurationSingletonTest {
     void configurationTest() {
         ApplicationContext ac = new AnnotationConfigReactiveWebApplicationContext(AppConfig.class);
 
-        MemberServiceImpl memberService =  ac.getBean("memberService", MemberServiceImpl.class);
+        MemberServiceImpl memberService = ac.getBean("memberService", MemberServiceImpl.class);
         OrderServiceImpl orderService = ac.getBean("orderService", OrderServiceImpl.class);
         MemberRepository memberRepository = ac.getBean("memberRepository", MemberRepository.class);
 
@@ -33,4 +33,11 @@ public class ConfigurationSingletonTest {
         assertThat(orderService.getMemberRepository()).isSameAs(memberRepository);
     }
 
+    @Test
+    void configurationDeep() {
+        ApplicationContext ac = new AnnotationConfigReactiveWebApplicationContext(AppConfig.class);
+        AppConfig bean = ac.getBean(AppConfig.class);
+
+        System.out.println("bean = " + bean.getClass());
+    }
 }
